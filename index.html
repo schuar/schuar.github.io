@@ -4,7 +4,9 @@ function getQueryStringArray(){
     var assoc=[]; 
     var items = window.location.search.substring(1).split('&'); 
     for(var j = 0; j < items.length; j++) { 
-       var a = items[j].split('='); assoc[a[0]] = a[1]; 
+       var a = items[j].split('=');
+       if(len(a) > 1) assoc[a[0]] = a[1];
+       else assoc[a[0]] = 1;
     }
     return assoc;
 }
