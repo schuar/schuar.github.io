@@ -16,13 +16,50 @@
     </head>
 
 <body>
-    <script src="/~makarand/static/js/jquery-1.11.2.min.js"></script>
-    <script src="/~makarand/static/js/bootstrap.min.js"></script>
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="bootstrap.min.js"></script>
 
 
 
     <div class="container">
         
+<div class="row">
+    <div class="col-sm-3" style="padding-top: 60px;">
+        <img src="avatar.png" style="width: 240px; max-width: 240px">
+    </div>
+
+    <div class="col-sm-5">
+        <h2>About Me</h2>
+        <p class="text-justify">
+            Hi! I am Arne Schumann, a Senior Scientist at <a href="https://www.iosb.fraunhofer.de/en.html" target="_blank">Fraunhofer IOSB</a> in the department for <a href="https://www.iosb.fraunhofer.de/en/competences/image-exploitation/videoauswertesysteme.html" target="_blank">Video Exploitation Systems</a>.
+        </p>
+        
+        <p class="text-justify">
+            My work focuses on developing and integrating computer vision and deep learning models.
+            My position allows me to lead and work on projects that include a wide range of vision applications.
+            Primarily, I work on object detection using deep learning models in electro-optical and infrared data for, e.g., ship detection in maritime settings, drone detection, vehicle detection in aerial imagery or ground-based camera networks, and person detection.
+            The second major part of my work is re-identification of persons and vehicles, including recognition of auxiliary information, such as pose and attributes (e.g., wears-hat, carries backpack, etc.).
+            I also have done work on semantic segmentation and scene classification for aerial imagery, fine-grained recognition of vehicles and products, and quality assessment in production processes.
+        </p>
+
+        <p class="text-justify">
+            Previously, I completed my PhD at the <a href="http://cvhci.anthropomatik.kit.edu/" target="_blank">Computer Vision for Human Computer Interaction</a> (CVHCI) lab, <a href="http://www.kit.edu/english/index.php" target="_blank">Karlsruhe Institute of Technology</a> with Prof. Rainer Stiefelhagen.
+            My thesis focused on person re-identification through conventional computer vision and deep learning models.
+            Specifically, I included human pose information into the re-identification process to better handle pose variation, camera angle, occlusions and similar influences.
+            I also stayed at the <a href="http://www.eecs.qmul.ac.uk/" target="_blank"> School of Electronic Engineering and Computer Science</a> (EECS) at <a href="https://www.qmul.ac.uk/">Queen Mary University of London</a> with Prof. <a href="http://www.eecs.qmul.ac.uk/~sgg/">Shaogang Gong</a>. There, I worked on learning domain prototypes for domain-adaptive person re-identification requiring only a single image.
+        </p>
+
+        <p class="text-justify">
+            If you have any questions, please feel free to contact me.
+        </p>
+    </div>
+
+<div class="row">
+<div class="col-sm-12">
+<br/><br/><br/>
+</div>
+</div>
+
 <div class="row">
     <div class="col-sm-12">
         <h2>Publications</h2>
@@ -32,13 +69,13 @@
 
 <div class="row"><a class="publication" name="pub:p45"></a>
     <div class="col-sm-3">
-        <img src="paper.png" width=100% style="max-width: 200px; float:right; display:block;" alt="p45">
+        <img src="p45.png"  style="max-height: 150px;  display:block;" alt="p45">
     </div>
     <div class="col-sm-9">
-        <h4>title</h4>
-        <p>Authors<br />
-            Conference <a href="https://www.conference.org/" target="_blank">LINK</a>
-            Poster, Virtual, Nov 2020.
+        <h4>Deep Learning-based Drone Detection in Infrared Imagery with Limited Training Data</h4>
+        <p>Lars Sommer, Arne Schumann<br />
+            <a href="https://spie.org/conferences-and-exhibitions/security-and-defence" target="_blank">SPIE Security & Defense</a>,
+            Oral, Virtual, Sept 2020.
         </p>
         <p>
             <a type="button" class="btn btn-primary btn-sm" href="p45.pdf">PDF</a>
@@ -53,14 +90,44 @@
             
         </p>
 
-        <div id="bibtex_p45" class="collapse" style="font-family:monospace;">@inproceedings{...}</div>
-        <div id="abstract_p45" class="collapse" style="text-align:justify;color:#606060;">...</div>
+        <div id="bibtex_p45" class="collapse" style="font-family:monospace;">@inproceedings{sommer2020deep,
+  title={Deep learning-based drone detection in infrared imagery with limited training data},
+  author={Sommer, Lars and Schumann, Arne},
+  booktitle={Counterterrorism, Crime Fighting, Forensics, and Surveillance Technologies IV},
+  volume={11542},
+  pages={1154204},
+  year={2020},
+  organization={International Society for Optics and Photonics}
+}</div>
+        <div id="abstract_p45" class="collapse" style="text-align:justify;color:#606060;">The increased availability and capabilities of drones in the consumer market has lead to increased risk in air
+traffic control and other public safety concerns. Automated drone detection systems can help to generate alerts
+and increase reaction time by security forces. Recently proposed approaches and systems are usually based
+on a combination of sensors and machine learning to carry out the detection of drones. While electro-optical
+imagery is the most prevalent modality, infrared sensors can complement it by providing better visibility in
+certain situations with cluttered background or low light conditions. A key limitation when using infrared data
+is the limited availability of data for training machine learning methods.
+In this work, we specifically focus on the task of drone detection in infrared imagery. Our main focus lies
+on investigating how the small amount of available infrared data can be compensated for. We approach this
+problem through three different types of experiments. First, we compare a detector resulting from training on
+limited infrared data with a detector trained on more diverse optical data. We then propose and evaluate several
+methods for pre-processing optical data in such a way that it better resembles the characteristics of infrared
+data. Finally, we train detectors on a combination of infrared and pre-processed optical data and evaluate the
+trade-off between amount of available infrared data and achieved accuracy of the resulting detector. We evaluate
+all detectors on our own set of diverse infrared recordings. Our results show that suitable pre-processing of
+optical data can significantly improve the resulting accuracy and performs much better than training solely on
+limited infrared data.</div>
         <br />
     </div>
 </div>
 <br />
 
 
+
+<div class="row">
+<div class="col-sm-12">
+<br/><br/><br/>
+</div>
+</div>
 
 
 
